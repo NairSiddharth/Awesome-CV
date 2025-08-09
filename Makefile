@@ -1,22 +1,37 @@
 .PHONY: examples
 
+
 CC = xelatex
-EXAMPLES_DIR = examples
-RESUME_DIR = examples/resume
-CV_DIR = examples/cv
+MAIN_DIR = siddharth
+OUTPUT_DIR = output
+RESUME_DIR = $(MAIN_DIR)/resume
+CV_DIR = $(MAIN_DIR)/cv
 RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.tex')
 CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
+NAME = SiddharthNair
+DATE = $(shell date +%m%d%Y)
 
-examples: $(foreach x, coverletter cv resume, $x.pdf)
 
-resume.pdf: $(EXAMPLES_DIR)/resume.tex $(RESUME_SRCS)
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+all: coverletter.pdf cv.pdf resume.pdf
 
-cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 
-coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+resume.pdf: $(MAIN_DIR)/resume.tex $(RESUME_SRCS)
+	$(CC) -output-directory=$(MAIN_DIR) $<
+	mkdir -p $(OUTPUT_DIR)
+	cp $(MAIN_DIR)/resume.pdf $(OUTPUT_DIR)/$(NAME)_$(DATE)_resume.pdf
+
+
+cv.pdf: $(MAIN_DIR)/cv.tex $(CV_SRCS)
+	$(CC) -output-directory=$(MAIN_DIR) $<
+	mkdir -p $(OUTPUT_DIR)
+	cp $(MAIN_DIR)/cv.pdf $(OUTPUT_DIR)/$(NAME)_$(DATE)_cv.pdf
+
+
+coverletter.pdf: $(MAIN_DIR)/coverletter.tex
+	$(CC) -output-directory=$(MAIN_DIR) $<
+	mkdir -p $(OUTPUT_DIR)
+	cp $(MAIN_DIR)/coverletter.pdf $(OUTPUT_DIR)/$(NAME)_$(DATE)_coverletter.pdf
+
 
 clean:
-	rm -rf $(EXAMPLES_DIR)/*.pdf
+	rm -rf $(MAIN_DIR)/*.pdf $(OUTPUT_DIR)/*.pdf
