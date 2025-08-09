@@ -1,0 +1,123 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+
+%---------------------------------------------------------
+    \cventry
+    {Software Engineering Intern} % Job title
+    {JP Morgan Chase} % Organization
+    {Houston, TX\newline Plano, TX} % Location
+    {Jun. - Aug. 2022 - 2025} % Date(s)
+    {
+     \begin{cvitems} % Description(s) of tasks/responsibilities
+       \item{ 
+       \textbf{2025:} Released scripts to export and normalize 100+ Akamai CDN properties in first the latest rule format, then into valid HCL, indirectly \texttt{impacting the entire consumer base of 85 million+} as all external Chase websites rely on these properties to configure the Akamai CDN that serves content.
+       \begin{itemize}
+       \item Converted Akamai properties into Terraform modules with dynamically created .tfvars files per rule to improve maintainability.
+       \item \textit{Technologies: Python, Terraform, Akamai APIs, Bash (Backend)}
+       \end{itemize}
+       }
+       \item {
+       \textbf{2025:} Architected a robust data-ingestion pipeline for an Agentic RAG application enabling the entirety of \texttt{Chase Digital, 1,000+ engineers}, to search internal architectural documentation with image-aware embeddings and summarization — supporting applications used by 85M customers and 7.5M small businesses.
+       \begin{itemize}
+       \item Scraped internal web pages, chunked them with metadata, and generated vector embeddings for semantic \& lexical retrieval.
+       \item Embedded non-text content (PDFs, PPTs, code blocks, images) by generating three role specific (architect, product owner, and developer) text equivalents via prompt engineering. This enabled the RAG model to dynamically serve vectors tailored to user expertise and query context, improving semantic relevance and usability across diverse teams.
+       \item Summarized and classified each page for downstream usage. 
+       \item \textit{Technologies: Python, LangChain, Azure OpenAI, Pydantic, SQL (Backend); AWS OpenSearch, S3, Aurora (Infrastructure)}
+       \end{itemize}
+       }
+       \item{ \textbf{2024:} Designed and implemented internal full-stack web tools to automate parameterized batch jobs, accelerating SQL backend data migration between deployment environments and enabling engineers to reproduce and fix production bugs \texttt{2x as fast}.
+        \begin{itemize}
+            \item \textit{Technologies: Java \& Spring Boot, SQL (Backend); React \& JavaScript (Frontend)}
+        \end{itemize}
+        }
+        \item{ \textbf{2024:} Built a time-series forecasting model to estimate production deal volume and support ticket frequency across support cycles, with a \texttt{Symmetric Mean Absolute Percentage Error of 5.38\%} when backtested.
+        \begin{itemize}
+        \item Incorporated historical internal data and external macroeconomic indicators, such as Federal Reserve financial rates, to improve forecast precision.
+        \item \textit{Technologies: Python, Facebook Prophet, Pandas, Jupyter (Backend)}
+        \end{itemize}
+        }
+        \item { \textbf{2023:} Delivered a full-stack analytics dashboard for the Fundamental Review of the Trading Book \texttt{(FRTB)} team, enabling comparison of trader behavior and performance against Market Risk benchmarks.
+        \begin{itemize}
+        \item Implemented dynamic filtering and historical drill-down capabilities to support detailed analytics.
+        \item Enhanced test team’s ability to identify trading patterns and risk deviations in real time, improving decision-making for market risk assessment and compliance.
+        \item \textit{Technologies: Python, Pandas, Tornado (Backend); React, JavaScript (Frontend); JPMC Private Cloud (Infrastructure)} 
+        \end{itemize}
+        }
+        \item{
+        \textbf{2022:} Deployed an interactive ML monitoring interface for JPMC Quants to track model training jobs and deployment status, serving as an internal alternative to Comet.com.
+        \begin{itemize}
+        \item \textit{Technologies: Jupyter Notebooks, Amazon SageMaker \& CloudWatch (Backend); Voila, ipywidgets, Perspective.js (Frontend)}
+        \end{itemize}
+        }
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Software Engineering Intern} % Job title
+    {Lumen Technologies} % Organization
+    {Houston, TX} % Location
+    {Jun. 2021 - Aug. 2021} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Developed a Python program to generate daily flat files for logging and reporting purposes.
+      \begin{itemize}
+      \item \textit{Technologies: Python, Unix, Bash (Backend)}
+      \end{itemize}
+      }
+      \item{Created shell scripts to reset database values monthly, preventing data over-accumulation and maintaining system performance.
+      \begin{itemize}
+      \item \textit{Technologies: Bash, Unix (Backend)}
+      \end{itemize}
+      }
+      \item {Modified SQL scripts to accurately generate billing reports for \texttt{10,000+ customers}.
+      \begin{itemize}
+      \item \textit{Technologies: SQL (Backend)}
+      \end{itemize}
+      }
+      \end{cvitems}
+    }
+%---------------------------------------------------------
+\end{cventries}
+
+%---------------------------------------------------------
+  % \cventry
+  %   {Student Leader - ApplyAI} % Job title
+  %   {AI4ALL} % Organization
+  %   {College Station, Texas} % Location
+  %   {Jan. 2023 - Aug. 2024} % Date(s)
+  %   {
+  %     \begin{cvitems} % Description(s) of tasks/responsibilities
+  %       \item {Facilitated Apply AI events including program launch, proposal and final presentations, social events, and workshops.}
+  %       \item {Assisted 4 Apply AI student groups, with 4 students per group, by managing their projects and working with their teammates and mentor to provide a deliverable by the end of the program.}
+  %       \item {Used Python, Teachable Machines, \& Jupyter Notebooks to help students understand concepts of algorithms and train machine learning models.}
+  %     \end{cvitems}
+  %   }
+    
+
+
+% %---------------------------------------------------------
+ % \cventry
+ %   {iOS App Developer} % Job title
+ %   {TAMU Computer Science \& Engineering} % Organization
+ %   {College Station, Texas} % Location
+ %   {Feb. 2021 - Apr. 2021} % Date(s)
+ %   {
+ %     \begin{cvitems} % Description(s) of tasks/responsibilities
+ %       \item {Implemented Kroger REST Product and Location API functionality into a recipe app so a specific location can be selected and requisite products can be put into a cart to purchase for recipe development.}
+  %      \item {Enabled 64-bit encryption for interacting with the Kroger Product Search API.} 
+  %    \end{cvitems}
+  %}
+
+%---------------------------------------------------------
+
+
