@@ -18,34 +18,21 @@
     {Jun. - Aug. 2022 - 2025} % Date(s)
     {
      \begin{cvitems} % Description(s) of tasks/responsibilities
-       \item{ 
-       \textbf{2025:} Released scripts to export and normalize 100+ Akamai CDN properties in first the latest rule format, then into valid HCL, indirectly \texttt{impacting the entire consumer base of 85 million+} as all external Chase websites rely on these properties to configure the Akamai CDN that serves content.
-       \begin{itemize}
-       \item Converted Akamai properties into Terraform modules with dynamically created .tfvars files per rule to improve maintainability.
-       \item \textit{Technologies: Python, Terraform, Akamai APIs, Bash (Backend)}
-       \end{itemize}
-       }
-       \item {
-       \textbf{2025:} Architected a robust data-ingestion pipeline for an Agentic RAG application enabling the entirety of \texttt{Chase Digital, 1,000+ engineers}, to search internal architectural documentation with image-aware embeddings and summarization — supporting applications used by 85M customers and 7.5M small businesses.
-       \begin{itemize}
-       \item Scraped internal web pages, chunked them with metadata, and generated vector embeddings for semantic \& lexical retrieval.
-       \item Embedded non-text content (PDFs, PPTs, code blocks, images) by generating three role specific (architect, product owner, and developer) text equivalents via prompt engineering. This enabled the RAG model to dynamically serve vectors tailored to user expertise and query context, improving semantic relevance and usability across diverse teams.
-       \item Summarized and classified each page for downstream usage. 
-       \item \textit{Technologies: Python, LangChain, Azure OpenAI, Pydantic, SQL (Backend); AWS OpenSearch, S3, Aurora (Infrastructure)}
-       \end{itemize}
-       }
-       \item{ \textbf{2024:} Designed and implemented internal full-stack web tools to automate parameterized batch jobs, accelerating SQL backend data migration between deployment environments and enabling engineers to reproduce and fix production bugs \texttt{2x as fast}.
-        \begin{itemize}
-            \item \textit{Technologies: Java \& Spring Boot, SQL (Backend); React \& JavaScript (Frontend)}
-        \end{itemize}
+      \item {\textbf{2025:} Delivered multiple high-impact projects at JP Morgan Chase affecting \textbf{1,000+ engineers} across Chase Digital and \textbf{85M+ consumers}:
+      \begin{itemize}
+        \item Released scripts to export and normalize 100+ Akamai CDN properties into Terraform modules with dynamic `.tfvars`, indirectly impacting 85M+ consumers.
+        \item Architected an Agentic RAG data-ingestion pipeline or 1,000+ engineers across Chase Digital to search internal docs with multimodal embeddings and role-specific prompt engineering.
+        \item \textit{Technologies: Python, Terraform, Akamai APIs, LangChain, Azure OpenAI, PostgresSQL (Backend); AWS OpenSearch, S3, Aurora (Infrastructure); Bash (DevOps)}
+      \end{itemize}
+      }
+      \item { \textbf{2024:} Built tooling and models to accelerate backend operations, \textbf{halving time taken} for production bug fixes:
+      \begin{itemize}
+        \item Designed full-stack web tools automating parameterized batch jobs, halving time taken of SQL data migration and production bug fixes.
+        \item Developed time-series forecasting model with \textbf{5.38\% SMAPE} incorporating macroeconomic data.
+        \item \textit{Technologies: Java, Spring Boot, Python, Pandas, Facebook Prophet, OracleSQL (Backend); React (Frontend)}
+      \end{itemize}
         }
-        \item{ \textbf{2024:} Built a time-series forecasting model to estimate production deal volume and support ticket frequency across support cycles, with a \texttt{Symmetric Mean Absolute Percentage Error of 5.38\%} when backtested.
-        \begin{itemize}
-        \item Incorporated historical internal data and external macroeconomic indicators, such as Federal Reserve financial rates, to improve forecast precision.
-        \item \textit{Technologies: Python, Facebook Prophet, Pandas, Jupyter (Backend)}
-        \end{itemize}
-        }
-        \item { \textbf{2023:} Delivered a full-stack analytics dashboard for the Fundamental Review of the Trading Book \texttt{(FRTB)} team, enabling comparison of trader behavior and performance against Market Risk benchmarks.
+        \item { \textbf{2023:} Delivered a full-stack analytics dashboard for the Fundamental Review of the Trading Book \textbf{(FRTB)} team, enabling comparison of trader behavior and performance against Market Risk benchmarks.
         \begin{itemize}
         \item Implemented dynamic filtering and historical drill-down capabilities to support detailed analytics.
         \item Enhanced test team’s ability to identify trading patterns and risk deviations in real time, improving decision-making for market risk assessment and compliance.
@@ -60,7 +47,30 @@
         }
       \end{cvitems}
     }
-
+%---------------------------------------------------------
+\cventry
+  {Intramural Flag Football Referee \& Supervisor} % Job title
+  {Texas A\&M University Department of Recreational Sports} % Organization
+  {College Station, TX} % Location
+  {Jan. 2023 -- Dec. 2024} % Date(s)
+  { 
+    \begin{cvitems}   
+      \item{
+      \textbf{Supervisor:} Improved participant experience and operational efficiency to support \textbf{14,000+ students} per semester.
+      \begin{itemize}
+      \item Continued refereeing duties while additionally managing referee teams, scheduling games, and overseeing tournaments.
+      \item Mentored promising referees through targeted training sessions and one-on-one coaching, enabling many to advance to supervisory roles.
+      \end{itemize}
+      }
+      \item{
+      \textbf{Referee:} Improved participant experience support \textbf{14,000+ students} per semester.
+      \begin{itemize}
+      \item Officiated intramural flag football games, ensuring fair play and enforcing rules.
+      \item Recognized for superior conflict management skills and rules knowledge; selected for special events and regional tournaments.
+      \end{itemize}
+      }
+    \end{cvitems}
+  }
 %---------------------------------------------------------
   \cventry
     {Software Engineering Intern} % Job title
@@ -79,9 +89,9 @@
       \item \textit{Technologies: Bash, Unix (Backend)}
       \end{itemize}
       }
-      \item {Modified SQL scripts to accurately generate billing reports for \texttt{10,000+ customers}.
+      \item {Modified SQL scripts to accurately generate billing reports for \textbf{10,000+ customers}.
       \begin{itemize}
-      \item \textit{Technologies: SQL (Backend)}
+      \item \textit{Technologies: MySQL (Backend)}
       \end{itemize}
       }
       \end{cvitems}

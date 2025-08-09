@@ -105,7 +105,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+\geometry{left=2.0cm, top=1.0cm, right=2.0cm, bottom=1.0cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and footer
@@ -163,11 +163,25 @@
 %-------------------------------------------------------------------------------
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
-\newcommand*{\headerfont}{\roboto}
-\newcommand*{\headerfontlight}{\robotolight}
-\newcommand*{\footerfont}{\sourcesanspro}
-\newcommand*{\bodyfont}{\sourcesanspro}
-\newcommand*{\bodyfontlight}{\sourcesansprolight}
+\newfontfamily\cambriafont[
+  Path=fonts/, % or Path=\@fontdir, if that's how your macro is set up
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic,
+]{Cambria}
+\newfontfamily\constantiafont[
+  Path=fonts/, % or Path=\@fontdir, if that's how your macro is set up
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic,
+]{Constantia}
+\newcommand*{\headerfont}{\cambriafont}
+\newcommand*{\headerfontlight}{\cambriafont}
+\newcommand*{\footerfont}{\cambriafont}
+\newcommand*{\bodyfont}{\constantiafont}
+\newcommand*{\bodyfontlight}{\constantiafont}
 
 %-------------------------------------------------------------------------------
 %                Configuration for styles
