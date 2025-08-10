@@ -19,28 +19,29 @@
           \item {\textbf{2025:} Delivered multiple large-scale initiatives impacting \textbf{1,000+ engineers} across Chase Digital and indirectly \textbf{85M+ customers}:
           \begin{itemize}
             \item Automated export and normalization of 100+ Akamai CDN properties into Terraform modules with dynamic \texttt{.tfvars} creation, enabling faster, more reliable configuration of all public-facing Chase websites.
-            \item Designed and deployed a multimodal ingestion pipeline for an Agentic RAG application, enabling more intelligent searches of architectural documentation enhanced with role-specific prompt engineering for architects, developers, and product owners.
-            \item Implemented hybrid retrieval in AWS OpenSearch by combining lexical (BM25) and semantic (vector) search with Reciprocal Rank Fusion (RRF), improving ranking accuracy and content relevance in the Agentic RAG application.
-            \item \textsc{Technologies}: \textit{Backend} – Python, Terraform, Akamai APIs, LangChain, Azure OpenAI, PostgreSQL; \textit{Infrastructure} – AWS OpenSearch, S3, Aurora; \textit{DevOps} – Bash
+            \item Developed a multimodal ingestion pipeline for an Agentic RAG application, enhancing search across architectural documentation with role-specific prompt engineering.
+            \item Enhanced search relevance by combining lexical (BM25) and semantic (vector) search through Reciprocal Rank Fusion (RRF).
+            \item Implemented a Redis cache POC for frequently queried vector embeddings, reducing time taken for FAQ retrieval by minimizing queries of the full vector DB.
+            \item \textsc{Technologies}: \textit{Backend} – Python, Terraform, LangChain, Azure OpenAI, PostgreSQL; \textit{Infrastructure} – AWS OpenSearch, S3, Aurora, ElastiCache for Redis; \textit{DevOps} – Bash
           \end{itemize}
           }
-          \item { \textbf{2024:} Built tooling and forecasting models to accelerate backend operations, reducing production bug resolution time by \textbf{50\%}:
+          \item { \textbf{2024:} Deployed tooling and forecasting models to accelerate backend operations, reducing production bug resolution time by \textbf{50\%}:
           \begin{itemize}
-            \item Created web-based automation for parameterized batch jobs, streamlining environment migrations and bug resolution.
-            \item Developed a time-series forecasting model with \textbf{5.38\% SMAPE}, leveraging historical data and macroeconomic indicators to improve accuracy.
+            \item Designed web-based automation for parameterized batch jobs, streamlining environment migrations and bug resolution.
+            \item Engineered a time-series forecasting model with \textbf{5.38\% SMAPE}, leveraging historical data and macroeconomic indicators to improve accuracy.
             \item \textsc{Technologies}: \textit{Backend} – Java, Spring Boot, Python, Pandas, Facebook Prophet, Oracle SQL; \textit{Frontend} – React, JavaScript
           \end{itemize}
             }
             \item { \textbf{2023:} Developed a full-stack analytics dashboard for the Fundamental Review of the Trading Book (FRTB) team, enabling real-time evaluation of trader performance against Market Risk benchmarks.
             \begin{itemize}
-            \item Added dynamic filtering and historical drill-down capabilities to enhance pattern detection and compliance analysis.            
-            \item \textsc{Technologies}: \textit{Backend} – Python, Pandas, Tornado; \textit{Frontend} – React, JavaScript; \textit{Infrastructure} – JPMC Private Cloud
+            \item Introduced dynamic filtering and historical drill-down capabilities to enhance pattern detection and compliance analysis.            
+            \item \textsc{Technologies}: \textit{Backend} – Python, Pandas, Tornado; \textit{Frontend} – React, JavaScript; \textit{Infrastructure} – AWS Athena
             \end{itemize}
             }
             \item{ \textbf{2022:} Built an internal alternative to Comet.com for model monitoring and control:
             \begin{itemize}
-                \item Created an interactive dashboard enabling both real-time monitoring and direct control of ML training jobs and deployment status, with live logging and visual analytics.
-                \item \textsc{Technologies}: \textit{Backend} – Jupyter Notebooks, Amazon SageMaker, AWS CloudWatch; \textit{Frontend} – Voila, ipywidgets, Plotly
+                \item Developed an interactive dashboard enabling both real-time monitoring and direct control of ML training jobs and deployment status, with live logging and visual analytics.
+                \item \textsc{Technologies}: \textit{Backend} – Python, AWS SageMaker, CloudWatch; \textit{Frontend} – Voila; \textit{Infrastructure} – AWS Athena
             \end{itemize}
             } 
           \end{cvitems}
@@ -53,9 +54,9 @@
   {Jan. 2023 -- Dec. 2024} % Date(s)
   {
     \begin{cvitems}
-      \item{Oversaw intramural flag football operations for \textbf{14,000+ participants} per semester, managing referee teams, and supervising tournaments while officiating games.
+      \item{Contributed to managing intramural flag football operations for \textbf{14,000+ participants} per semester, managing referee teams, and supervising tournaments while officiating games.
       \begin{itemize}
-      \item Mentored referees through targeted training and coaching, with several advancing to supervisory roles.
+      \item Coached referees through targeted training and one-on-one mentoring, with several advancing to supervisory roles.
       \item Recognized for conflict management and rules knowledge; selected to officiate special events and regional tournaments.
       \end{itemize}
       }
@@ -68,10 +69,12 @@
   {College Station, TX} % Location
   {Jan. 2023 -- Aug. 2024} % Date(s)
   {
-    \begin{cvitems}
-      \item {Led Apply AI program events and managed 4 student groups per term through project milestones, enabling delivery of final AI projects. Worked with industry partners to align student projects with real-world applications and challenges.}
-      \item {Taught core algorithmic concepts and how-tos of ML model training. Provided guidance on how to improve model performance and showcase potential business impact of results.}
-      \item \textsc{Technologies}: \textit{Backend} – Python, Tensorflow, Pytorch, Jupyter Notebooks
+   \begin{cvitems}
+    \item {Facilitated Apply AI program events and guided 4 student groups per term through project milestones, collaborating with industry partners to ensure alignment with real-world applications.}
+    \item {Taught core algorithm concepts and model training techniques; coached students on showcasing project impact effectively.}
+    \begin{itemize}
+      \item \textsc{Technologies}: \textit{Backend} – Python, TensorFlow, PyTorch, Jupyter Notebooks
+    \end{itemize}
     \end{cvitems}
   }
 %---------------------------------------------------------
@@ -82,12 +85,12 @@
     {Jun. 2021 -- Aug. 2021} % Date(s)
     {
       \begin{cvitems}
-      \item {Developed a Python program to generate daily flat files from database inputs for logging and reporting; automated monthly database resets with shell scripts to prevent data over-accumulation and maintain system performance.
+      \item {Engineered a Python program to generate daily flat files from database inputs for logging and reporting; implemented monthly database resets with shell scripts to prevent data over-accumulation and maintain system performance.
       \begin{itemize}
       \item \textsc{Technologies}: \textit{Backend} – Python, MySQL; \textit{DevOps} – Bash, Unix
       \end{itemize}
       }
-      \item {Updated SQL scripts to accurately produce billing reports for \textbf{10,000+ customers}.
+      \item {Refined SQL scripts to accurately produce billing reports for \textbf{10,000+ customers}.
       \begin{itemize}
       \item \textsc{Technologies}: \textit{Backend} – MySQL
       \end{itemize}
