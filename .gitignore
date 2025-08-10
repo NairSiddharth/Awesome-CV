@@ -7,6 +7,7 @@
 *.fls
 *.out
 *.toc
+*.pdf
 
 ## Intermediate documents:
 *.dvi
@@ -29,7 +30,4 @@ siddharth/resume.xdv
 siddharth/coverletter.fdb_latexmk
 siddharth/resume.synctex.gz
 coverletter.fdb_latexmk
-siddharth/coverletter.pdf
-siddharth/cv.pdf
-siddharth/resume.pdf
-output/SiddharthNair_08092025_resume.pdf
+.vscode/settings.json
